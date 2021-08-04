@@ -25,6 +25,70 @@ ul{
   list-style-type: none;
 }
 
+/* ---Header--- */
+.hdr{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+}
+
+/* Menu Links */
+.menu-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  height: 100%;
+  text-align: center;
+}
+
+.menu-links ul li{
+  padding: 20px 30px;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.menu-links ul li > *{
+  color: #000000;
+  transition: all 0.3s ease-in;
+}
+
+.menu-links ul li > *:hover{
+  color: #ffffff;
+}
+
+/* ---Menu Button--- */
+.menu-btn{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 1000;
+}
+
+.menu-btn button{
+  font-size: 2rem;
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.menu-btn button:hover{
+  color: #ffffff;
+}
+
+/* ---Menu Toggle--- */
+.show{
+  height: 100%;
+  width: 100%;
+}
+
 /* -----Home Page----- */
 .home-page{
   position: relative;
@@ -138,6 +202,7 @@ ul{
 
 /* -----Responsive----- */
 @media(max-width: 600px){
+  /* ---Home Page--- */
   .home-page{
     background-size: 550px;
   }
