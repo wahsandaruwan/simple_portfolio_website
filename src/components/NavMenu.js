@@ -2,10 +2,14 @@ import {BiMenuAltLeft} from "react-icons/bi"
 import { MdClose } from "react-icons/md"
 import {Link} from "react-router-dom"
 import {useState} from "react"
+import {navBar} from "../data/nav"
 
 const NavMenu = () => {
   // Menu State
   const [isShow, setIsShow] = useState(false)
+
+  // Navlink Display State
+  const [links, setLinks] = useState(navBar)
 
   return (
     <>
@@ -18,18 +22,17 @@ const NavMenu = () => {
       <header className={`${isShow ? "hdr show" : "hdr"}`}>
         <nav className="menu-links">
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/skills">Skills</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            {
+              links.map((link) => {
+                const {id, title, url} = link;
+
+                return (
+                  <li key={id} onClick={() => setIsShow(false)}>
+                    <Link to={url}>{title}</Link>
+                  </li>
+                )
+              })
+            }
           </ul>
         </nav>
      </header>

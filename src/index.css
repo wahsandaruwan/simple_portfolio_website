@@ -48,8 +48,7 @@ ul{
 }
 
 .menu-links ul li{
-  padding: 20px 30px;
-  margin: 15px 0;
+  margin: 45px 0;
   font-size: 1.1rem;
 }
 
@@ -200,8 +199,75 @@ ul{
   }
 }
 
+/* -----Contact Page----- */
+.contact-page{
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-page h1{
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+/* ---Contact Form--- */
+.contact-page .con-form{
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* Input box */
+.contact-page .con-form .inpb{
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* Textarea */
+.contact-page .con-form .txtar{
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  font-size: 1rem;
+  resize: none;
+}
+
+/* Connection Box */
+.contact-page .con-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.contact-page .con-box .con-link{
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
 /* -----Responsive----- */
-@media(max-width: 600px){
+@media(max-width: 650px){
+  /* ---Menu Button--- */
+  .menu-btn{
+    top: 20px;
+    left: 15px;
+  }
+
   /* ---Home Page--- */
   .home-page{
     background-size: 550px;
@@ -221,5 +287,20 @@ ul{
 
   .download a{
     font-size: 0.9rem;
+  }
+
+  /* ---Contact Page--- */
+  .contact-page h1{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-page .con-box{
+    flex-direction: column;
+  }
+
+  .contact-page .con-box .con-link{
+    font-size: 0.9rem;
+    width: 100%;
   }
 }
