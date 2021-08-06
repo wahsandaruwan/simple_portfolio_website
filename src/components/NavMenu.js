@@ -1,9 +1,14 @@
-import {BiMenuAltLeft} from "react-icons/bi"
-import { MdClose } from "react-icons/md"
+// Components
 import {Link} from "react-router-dom"
+// Icons
+import {BiMenuAltLeft} from "react-icons/bi"
+import {MdClose} from "react-icons/md"
+// Hooks
 import {useState} from "react"
+// Data
 import {navBar} from "../data/nav"
 
+// Navigation Menu Component
 const NavMenu = () => {
   // Menu State
   const [isShow, setIsShow] = useState(false)

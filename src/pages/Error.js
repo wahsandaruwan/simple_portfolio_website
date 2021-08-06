@@ -1,3 +1,4 @@
+// Error Page Component
 const Error = () => {
     return (
         <>

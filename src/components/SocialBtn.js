@@ -1,3 +1,4 @@
+// Social Media Button Component
 const SocialBtn = (props) => {
     return (
         <>

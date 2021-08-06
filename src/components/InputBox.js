@@ -1,3 +1,4 @@
+// Input Box Component
 const InputBox = (props) => {
     return (
         <>

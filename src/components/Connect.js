@@ -1,3 +1,4 @@
+// Connection Button Component
 const Connect = (props) => {
     return (
         <>

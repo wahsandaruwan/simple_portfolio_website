@@ -1,7 +1,10 @@
+// Components
 import SocialBtn from "../components/SocialBtn"
 import NormalBtn from "../components/NormalBtn"
+// Icons
 import {FaTwitter, FaGithub, FaLinkedinIn} from "react-icons/fa"
 
+// Home Page Component
 const Home = () => {
     return (
         <>

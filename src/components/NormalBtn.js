@@ -1,3 +1,4 @@
+// Normal Button Component
 const NormalBtn = (props) => {
     return (
         <>

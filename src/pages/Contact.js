@@ -4,6 +4,7 @@ import InputBox from "../components/InputBox"
 // Icons
 import {FaPhoneSquareAlt, FaMailBulk} from "react-icons/fa"
 
+// Contact Page Component
 const Contact = () => {
     return (
         <>

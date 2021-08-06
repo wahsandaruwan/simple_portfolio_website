@@ -1,6 +1,9 @@
+// Hooks
 import {useState} from "react"
+// Data
 import {projects} from "../data/projects"
 
+// Portfolio Page Component
 const Portfolio = () => {
     // Projects Display State
     const [boxes, setBoxes] = useState(projects)
