@@ -24,8 +24,8 @@ const NavMenu = () => {
           <ul>
             {
               links.map((link) => {
-                const {id, title, url} = link;
-
+                // Object Destructure
+                const {id, title, url} = link
                 return (
                   <li key={id} onClick={() => setIsShow(false)}>
                     <Link to={url}>{title}</Link>
