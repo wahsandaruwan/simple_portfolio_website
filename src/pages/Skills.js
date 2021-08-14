@@ -6,9 +6,7 @@ import { skillsHave } from "../data/skills"
 // Skills Page Component
 const Skills = () => {
     // Skills Display State
-    const [skills, setSkills] = useState(skillsHave)
-
-    let frCount = 0;
+    const [skills] = useState(skillsHave)
 
     return (
         <>

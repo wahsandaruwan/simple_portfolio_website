@@ -6,7 +6,7 @@ import {projectsDone} from "../data/projects"
 // Portfolio Page Component
 const Portfolio = () => {
     // Projects Display State
-    const [projects, setProjects] = useState(projectsDone)
+    const [projects] = useState(projectsDone)
 
     return (
         <>

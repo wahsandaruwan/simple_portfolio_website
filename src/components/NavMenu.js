@@ -15,7 +15,7 @@ const NavMenu = () => {
   const [isShow, setIsShow] = useState(false)
 
   // Navlink Display State
-  const [links, setLinks] = useState(navBar)
+  const [links] = useState(navBar)
 
   // Set Body Overflow when Showing Nav Menu
   const body = document.querySelector('body')
