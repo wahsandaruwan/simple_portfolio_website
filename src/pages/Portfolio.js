@@ -1,20 +1,21 @@
 // Hooks
 import {useState} from "react"
 // Data
-import {projects} from "../data/projects"
+import {projectsDone} from "../data/projects"
 
 // Portfolio Page Component
 const Portfolio = () => {
     // Projects Display State
-    const [boxes, setBoxes] = useState(projects)
+    const [projects, setProjects] = useState(projectsDone)
+
     return (
         <>
             <section className="portfolio-page">
                 <h1>My Portfolio</h1>
                 <div className="boxes">
                     {
-                        boxes.map((box) => {
-                            const {id, title, desc, github, demo, image} = box
+                        projects.map((proj) => {
+                            const {id, title, desc, github, demo, image} = proj
                             console.log(image)
                             return (
                                 <div className="bx" key={id}>

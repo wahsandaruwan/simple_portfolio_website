@@ -1,7 +1,7 @@
 import {v4 as uuidV} from "uuid"
 
 // Create an Object Array with Project Details
-export const projects = [
+export const projectsDone = [
     {
         id: uuidV(),
         title: "Project One",

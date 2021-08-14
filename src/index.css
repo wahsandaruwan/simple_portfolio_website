@@ -382,7 +382,8 @@ ul{
 }
 
 .error-page h1{
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 .error-page .back-btn{
@@ -398,6 +399,98 @@ ul{
   background-color: #ffffff;
   color: #000000;
 }
+
+/* -----Skills Page----- */
+.skill-page{
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ---Title--- */
+.skill-page h1{
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+/* ---Skill Rows--- */
+.skill-page .row{
+  position: relative;
+  max-width: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.skill-page .row::after{
+  position: absolute;
+  content: '';
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* Frontend */
+.skill-page .front{
+  background-color: #e74c3c;
+}
+
+.skill-page .front::after{
+  content: 'Frontend';
+}
+
+/* Backend */
+.skill-page .back{
+  background-color: #8e44ad;
+}
+
+.skill-page .back::after{
+  content: 'Backend';
+}
+
+/* Databases */
+.skill-page .data{
+  background-color: #27ae60;
+}
+
+.skill-page .data::after{
+  content: 'Databases';
+}
+
+/* DevOps */
+.skill-page .dev{
+  background-color: #e67e22;
+}
+
+.skill-page .dev::after{
+  content: 'DevOps';
+}
+
+/* Skill Box */
+.skill-page .row .ski{
+  min-width: 80px;
+  text-align: center;
+  margin: 10px;
+}
+
+.skill-page .row .ski img{
+  max-width: 60px;
+  margin-bottom: 5px;
+}
+
+.skill-page .row .ski p{
+  font-size: 1rem;
+}
+
 
 /* -----Responsive----- */
 @media(max-width: 1200px){
@@ -415,6 +508,14 @@ ul{
 }
 
 @media(max-width: 600px){
+  /* ---Common--- */
+  .portfolio-page h1,
+  .skill-page h1,
+  .contact-page h1{
+    font-size: 1.8rem !important;
+    margin-bottom: 20px !important;
+  }
+
   /* ---Menu Button--- */
   .menu-btn{
     top: 20px;
@@ -443,11 +544,6 @@ ul{
   }
 
   /* ---Portfolio Page--- */
-  .portfolio-page h1{
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-
   .portfolio-page .boxes .bx{
     width: 100%;
   }
@@ -457,11 +553,6 @@ ul{
   }
 
   /* ---Contact Page--- */
-  .contact-page h1{
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-  }
-
   .contact-page .con-box{
     flex-direction: column;
     align-items: center;
