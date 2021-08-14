@@ -7,6 +7,7 @@ import {MdClose} from "react-icons/md"
 import {useState} from "react"
 // Data
 import {navBar} from "../data/nav"
+import Credit from "./Credit"
 
 // Navigation Menu Component
 const NavMenu = () => {
@@ -48,6 +49,7 @@ const NavMenu = () => {
               })
             }
           </ul>
+          <Credit/>
         </nav>
      </header>
     </>

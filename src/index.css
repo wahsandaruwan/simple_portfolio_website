@@ -49,6 +49,7 @@ ul{
   background-color: #3498db;
   height: 100%;
   text-align: center;
+  flex-direction: column;
 }
 
 .menu-links ul li{
@@ -63,6 +64,18 @@ ul{
 
 .menu-links ul li > *:hover{
   color: #ffffff;
+}
+
+/* Credits */
+.credit{
+  position: absolute;
+  bottom: 50px;
+}
+
+.credit p {
+  font-size: 0.9rem;
+  margin: 0px 10px;
+  line-height: 1.5rem;
 }
 
 /* ---Menu Button--- */
@@ -490,7 +503,6 @@ ul{
 .skill-page .row .ski p{
   font-size: 1rem;
 }
-
 
 /* -----Responsive----- */
 @media(max-width: 1200px){
