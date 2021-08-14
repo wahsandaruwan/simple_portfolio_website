@@ -16,6 +16,15 @@ const NavMenu = () => {
   // Navlink Display State
   const [links, setLinks] = useState(navBar)
 
+  // Set Body Overflow when Showing Nav Menu
+  const body = document.querySelector('body')
+  if(isShow){
+    body.style.overflow = "hidden";
+  }
+  else{
+    body.style.overflow = "";
+  }
+
   return (
     <>
       <div className="menu-btn">

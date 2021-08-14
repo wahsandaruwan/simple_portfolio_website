@@ -2,7 +2,10 @@
 const Skills = () => {
     return (
         <>
-            <h1>Skills</h1>
+            <section className="skill-page">
+                <h1>My Skills</h1>
+                
+            </section>
         </>
     )
 }
