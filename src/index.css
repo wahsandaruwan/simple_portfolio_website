@@ -371,6 +371,34 @@ ul{
   margin-left: 10px;
 }
 
+/* -----Error Page----- */
+.error-page{
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-page h1{
+  font-size: 2.5rem;
+}
+
+.error-page .back-btn{
+  padding: 20px 40px;
+  font-size: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  transition: all 0.3s ease-in;
+}
+
+/* ---Back Button--- */
+.error-page .back-btn:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
+
 /* -----Responsive----- */
 @media(max-width: 1200px){
   /* ---Portfolio Page--- */
