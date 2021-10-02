@@ -6,7 +6,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 // Components
 import NavMenu from "./components/NavMenu";
-// Icons
+// Router
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 // Main App Component
